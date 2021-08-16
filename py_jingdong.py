@@ -54,10 +54,13 @@ while True:
         print("输入有误，请重新输入")
 
     if select == 'error':
-        break
+        pass
 
 
 cs1.close()
 conn.close()
+
+
+
 
 
