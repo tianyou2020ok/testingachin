@@ -51,7 +51,7 @@ while True:
 
     if select != 1 or select != 2 or select != 3 or select != 4:
         print("输入有误，请重新输入")
+        break
 
 cs1.close()
 conn.close()
-
