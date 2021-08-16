@@ -27,7 +27,7 @@ while True:
         result = cs1.fetchall()
         for i in result:
             print(i)
-        break
+       
 
     #
     if select == 2:
@@ -37,8 +37,7 @@ while True:
         result = cs1.fetchall()
         for i in result:
             print(i)
-        break
-
+        
     #
     if select == 3:
         count = cs1.execute('select cate_name brand_name from goods')
@@ -47,8 +46,7 @@ while True:
         result = cs1.fetchall()
         for i in result:
             print(i)
-        break
-
+        
     #
     if select == 4:
         break
