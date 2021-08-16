@@ -40,7 +40,7 @@ while True:
         
     #
     if select == 3:
-        count = cs1.execute('select cate_name brand_name from goods')
+        count = cs1.execute('select cate_name,brand_name from goods')
 
         print('共有%d行数据' %count)
         result = cs1.fetchall()
