@@ -23,7 +23,7 @@ while True:
     if select == 1:
         count = cs1.execute('select * from goods')
 
-        print('共有d%行数据' %count)
+        print('共有%d行数据' %count)
         result = cs1.fetchall()
         print(result)
         break
@@ -32,7 +32,7 @@ while True:
     if select == 2:
         count = cs1.execute('select * from goods')
 
-        print('共有d%行数据' %count)
+        print('共有%d行数据' %count)
         result = cs1.fetchall()
         print(result)
         break
@@ -41,7 +41,7 @@ while True:
     if select == 3:
         count = cs1.execute('select * from goods')
 
-        print('共有d%行数据' %count)
+        print('共有%d行数据' %count)
         result = cs1.fetchall()
         print(result)
         break
@@ -56,11 +56,5 @@ while True:
     if select == 'error':
         pass
 
-
 cs1.close()
 conn.close()
-
-
-
-
-
