@@ -9,13 +9,15 @@ conn = connect(host='localhost',port=3306,database='jing_dong',user='root',passw
 cs1 = conn.cursor()
 
 
-print('1.查询所有数据')
-print('1.查询所有种类')
-print('1.查询所有种类和品牌')
-print('4.退出')
-select = int(input('请输入'))
-
 while True:
+    print('1.查询所有数据')
+    print('2.查询所有种类')
+    print('3.查询所有种类和品牌')
+    print('4.退出')
+    try:
+        select = int(input('请输入'))
+    except Exception:
+        print("请键入数字")
     #
     if select == 1:
         count = cs1.execute('select * from goods')
@@ -23,6 +25,7 @@ while True:
         print('共有d%行数据' %count)
         result = cs1.fetchall()
         print(result)
+        break
 
     #
     if select == 2:
@@ -31,6 +34,7 @@ while True:
         print('共有d%行数据' %count)
         result = cs1.fetchall()
         print(result)
+        break
 
     #
     if select == 3:
@@ -39,6 +43,7 @@ while True:
         print('共有d%行数据' %count)
         result = cs1.fetchall()
         print(result)
+        break
 
     #
     if select == 4:
